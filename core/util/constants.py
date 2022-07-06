@@ -6,7 +6,7 @@ def is_operator(char):
     return char in OPERATIONS.keys()
 
 
-PATH = pathlib.Path(os.getcwd()).parent.absolute()
+PATH = pathlib.Path(os.getcwd()).absolute()
 
 EMPTY_STR = ""
 CHARACTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
