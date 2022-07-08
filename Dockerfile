@@ -9,5 +9,7 @@ COPY requirements.txt \
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# run and output program results from filename input parameter.
-RUN python -m core.main --filename input.txt
+# run and print the output
+RUN python -m core.main
+
+RUN python -m core.main --input_file input.txt --output_name output --out txt
