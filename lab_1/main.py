@@ -4,7 +4,7 @@ from typing import Union, AnyStr, SupportsIndex, SupportsInt
 import json
 
 # module imports
-from core.util import LinkedStack as Stack, is_operands, is_operator, PATH, InvalidPrefixException, StackSyntaxException
+from util import LinkedStack as Stack, is_operands, is_operator, PATH
 
 
 def read_input(file_name: Union[AnyStr]):

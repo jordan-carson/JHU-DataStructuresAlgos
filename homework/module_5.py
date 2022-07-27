@@ -6,6 +6,17 @@ class AntiNode:
         self.left = None
 
 
+def fib_tree(n: int):
+    new_node = Node()
+    if n == 0 or n == 1:
+        new_node.left = None
+        new_node.right = None
+    else:
+        new_node.left = fib_tree(n - 1)
+        new_node.right = fib_tree(n - 2)
+    return new_node
+
+
 class NonCircularDeque:
     def __init__(self):
         self.current_node = None
