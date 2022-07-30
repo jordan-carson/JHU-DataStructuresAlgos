@@ -10,6 +10,4 @@ COPY requirements.txt \
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # run and print the output
-RUN python -m core.main
-
-RUN python -m core.main --input_file input.txt --output_name output --out txt
+RUN python -m app.main --func recursion --input_file input.txt --output_name output --out txt

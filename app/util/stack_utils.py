@@ -1,4 +1,4 @@
-from core.util.constants import EMPTY_STR
+from app.util.constants import EMPTY_STR
 
 
 class Node:
